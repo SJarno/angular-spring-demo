@@ -17,6 +17,7 @@ export class UserFormComponent {
     this.user = new User();
    }
    onSubmit() {
+     /* redirects after submit */
      this.UserService.save(this.user).subscribe(result => this.goToUserList());
    }
    goToUserList() {
